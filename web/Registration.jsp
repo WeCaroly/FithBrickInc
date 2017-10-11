@@ -1,7 +1,7 @@
 <%@ page import="webapp.User" %>
 
 <%
-    User user = (User)session.getAttribute("user");
+    User user = (User) request.getAttribute("");
     String reqType = request.getParameter("reqType");
     if (user == null && reqType == null) {
 %>
@@ -28,9 +28,3 @@
 <%@ include file="/WEB-INF/footer.jspf" %>
 </body>
 </html>
-
-<%!
-    public String replaceUnderscore(String s) {
-        return s.replace(' ','_');
-    }
-%>

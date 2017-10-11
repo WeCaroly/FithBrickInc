@@ -15,6 +15,7 @@ public class User {
     int age;
     char gender;
     boolean reciveEmail;
+    String pass;
 
     public String getFname() {
         return fname;
@@ -88,5 +89,7 @@ public class User {
         this.reciveEmail = reciveEmail;
     }
 
+    public void setPass(String pass){this.pass = pass;}
 
+    public String getPAss(){return pass;}
 }

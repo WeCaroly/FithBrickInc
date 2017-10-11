@@ -1,3 +1,4 @@
+<%@ page import="webapp.User" %>
 <html>
 <head>
     <title>Registered User</title>
@@ -5,9 +6,8 @@
 <body>
 <h1>Registered User</h1>
 
-<jsp:useBean id="user" scope="session" class="webapp.User">
-    <jsp:setProperty name="user" property="*" />
-</jsp:useBean>
+<% //change
+    User user = new User();%>
 
 Profile:
 <%= user.getUname() %>
@@ -37,9 +37,6 @@ You wish to get e-mails.
 You don't wish to get e-mails.
 <%
     }
-%>
-<%
-    session.removeAttribute("user");
 %>
 <a href="Registration.jsp">Back to Welcome Page</a>
 <%@ include file="/WEB-INF/footer.jspf" %>

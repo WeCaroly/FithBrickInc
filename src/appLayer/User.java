@@ -11,11 +11,5 @@ public class User {
     public boolean isValidUserCredentials(String sUserName, String sUserPassword){
         return db_User.isValidUserLogin(sUserName,sUserPassword);
     }
-    public ArrayList<todo> getTodoUser(){
-        return db_User.getTodo();
-    }
-    public void setTodo(todo newItem){
-        System.out.println(newItem.getTodo() + " " + newItem.getUser());
-        db_User.setTodo(newItem);
-    }
+
 }
