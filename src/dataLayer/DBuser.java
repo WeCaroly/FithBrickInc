@@ -1,12 +1,8 @@
 package dataLayer;
 
 import webapp.User;
-import webapp.todo;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import java.sql.*;
-import java.util.ArrayList;
 
 public class DBuser {
 

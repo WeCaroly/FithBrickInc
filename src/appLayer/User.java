@@ -1,10 +1,6 @@
 package appLayer;
 
 import dataLayer.DBuser;
-import webapp.todo;
-
-import javax.persistence.EntityManager;
-import java.util.ArrayList;
 
 public class User {
     private DBuser db_User = new DBuser();

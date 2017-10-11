@@ -17,7 +17,7 @@
     password: <input type="text" name="password" width="10"/>
     <input type="submit" value="Login"/>
 </form>
-<a href="form.html">Register</a>
+<a href="form.html">Click to Register</a>
 <p style="color: red">${errorMessage}</p>
 </body>
 </html>
